@@ -1,0 +1,49 @@
+$bgcolor: #F8F8F8;
+$buttoncolor: #FF3E79;
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TTLakes-bold";
+  src: url("../fonts/TTLakes-Medium.ttf");
+}
+
+.body {
+  font-family: "TTLakes", sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: $bgcolor;
+  min-width: 320px;
+}
+
+.ul-clear {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;    
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.hover:hover, .hover:active{
+opacity: 0.5;
+transition-duration: 0.2s;  
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border: 0px solid;
+    background-color: $buttoncolor;
+    background-position: center;    
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}

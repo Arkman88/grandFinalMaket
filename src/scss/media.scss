@@ -1,0 +1,149 @@
+@media screen and (max-width: 768px) {
+  .swiper-wrapper {
+    display: flex;
+    max-width: 768px;
+    height: 100px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+  }
+  .button-show-more {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .swiper-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 173px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 600px) {
+  .button-burger::after {
+    content: url(../img/divider.svg);
+    height: 32px;
+    width: 2px;
+    margin-left: 50px;
+  }
+  .header__logo {
+    margin-left: 35px;
+  }
+  .header__right-pad {
+    display: flex;
+    margin-left: auto;
+  }
+  .content__article {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .content__full-text {
+    display: block;
+  }
+
+  .content__text-more-btn {
+    display: none;
+  }
+
+  .content__topic-img {
+    margin-top: 15px;
+    width: 360px;
+    height: 208px;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 1440px;
+    min-width: 1360px;
+    align-items: start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header {
+    display: none;
+  }
+  .content__topic-img {
+    width: 531px;
+    height: 307px;
+  }
+  .content__text-more {
+    display: inline;
+  }
+  .content__large-bar {
+    margin-top: 24px;
+  }
+  .content__large-menu img {
+    margin-left: 8px;
+    margin-right: 32px;
+  }
+  .content__article {
+    align-items: flex-start;
+  }
+  .content__right-mob {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .button-tools::after {
+    content: 'Оставить заявку';
+    position: relative;
+    right: 140px;
+    top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .button-tools {
+    display: flex;
+    margin-right: 160px;
+  }
+  .button-search::before {
+    content: 'Статус ремонта';
+    position: relative;
+    right: 135px;
+    top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .button-search {
+    display: flex;
+    margin-right: 10px;
+  }
+  .content__menu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1050px;
+  }
+  .content__menu li:nth-child(6) {
+    margin-left: 34px;
+  }
+  .main {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: baseline;
+  }
+  #menu {
+    display: flex;
+    position: static;
+    border: none;
+    max-height: 900px;
+    box-shadow: none;
+  }
+  .button-alt-burger:first-child {
+    display: none;
+  }
+}

@@ -1,0 +1,134 @@
+$fontcolor: #1b1c21;
+$hovercolor: #7e7e82;
+$whitecolor: #fff;
+
+#menu {
+  flex-direction: column;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  width: 320px;
+  min-height: 100vh;
+  background-color: $whitecolor;
+  border: none;
+}
+
+#menu[open] {
+  display: flex;
+}
+
+#menu::backdrop {
+  backdrop-filter: blur(5px);
+}
+
+#menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 33px;
+  margin-bottom: 46px;
+}
+
+.button-alt-burger {
+  background-image: url(../img/alt_burger.svg);
+  margin-left: 24px;
+}
+
+.button-alt-search {
+  background-image: url(../img/alt-search.svg);
+  margin-right: 16px;
+  margin-left: auto;
+}
+
+.menu__logo {
+  margin-left: 16px;
+}
+
+.menu__logo:hover,
+.menu__logo:active {
+  opacity: 0.6;
+  transition-duration: 0.5s;
+}
+
+.menu__item {
+  position: relative;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  color: $fontcolor;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: $fontcolor;
+}
+
+.menu__link:focus {
+  color: #7e7e82;
+}
+
+.menu__link:focus::before {
+  content: url(../img/highlight.svg);
+  width: 4px;
+  height: 32px;
+  position: absolute;
+  left: -24px;
+  top: -10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.footer__menu {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.footer__mail {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  color: $fontcolor;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.footer__phone {
+  font-size: 24px;
+  font-style: normal;
+  text-decoration: none;
+  color: $fontcolor;
+  font-family: 'TTLakes-bold';
+  font-weight: 900;
+}
+
+.language {
+  display: flex;
+  gap: 7px;
+  margin-top: 40px;
+}
+
+.language__link {
+  text-decoration: none;
+  color: $fontcolor;
+  font-weight: 600;
+}
+
+.language__link:focus {
+  color: $hovercolor;
+}
+
+.footer__mail:focus,
+.footer__phone:focus {
+  color: $hovercolor;
+}
