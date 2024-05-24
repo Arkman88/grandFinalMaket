@@ -1,18 +1,18 @@
-$bgcolor: #F8F8F8;
-$buttoncolor: #FF3E79;
+$bgcolor: #f8f8f8;
+$buttoncolor: #ff3e79;
 
 @font-face {
-  font-family: "TTLakes";
-  src: url("../fonts/TTLakes-Regular.ttf");
+  font-family: 'TTLakes';
+  src: url('../fonts/TTLakes-Regular.ttf');
 }
 
 @font-face {
-  font-family: "TTLakes-bold";
-  src: url("../fonts/TTLakes-Medium.ttf");
+  font-family: 'TTLakes-bold';
+  src: url('../fonts/TTLakes-Medium.ttf');
 }
 
 .body {
-  font-family: "TTLakes", sans-serif; 
+  font-family: 'TTLakes', sans-serif;
   margin: 0;
   padding: 0;
   background-color: $bgcolor;
@@ -22,7 +22,7 @@ $buttoncolor: #FF3E79;
 .ul-clear {
   list-style-type: none;
   margin: 0;
-  padding: 0;    
+  padding: 0;
 }
 
 .no-select {
@@ -33,17 +33,22 @@ $buttoncolor: #FF3E79;
   user-select: none;
 }
 
-.hover:hover, .hover:active{
-opacity: 0.5;
-transition-duration: 0.2s;  
+.hover:hover,
+.hover:active {
+  opacity: 0.5;
+  transition-duration: 0.2s;
 }
 
 .button {
-    width: 40px;
-    height: 40px;
-    border: 0px solid;
-    background-color: $buttoncolor;
-    background-position: center;    
-    background-repeat: no-repeat;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 0px solid;
+  background-color: $buttoncolor;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.blur {
+  filter: blur(5px);
 }

@@ -1,26 +1,82 @@
-@media screen and (max-width: 768px) {
-  .swiper-wrapper {
-    display: flex;
-    max-width: 768px;
-    height: 100px;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-bottom: 10px;
+$bgcolor: rgba(0, 0, 0, 0);
+$white: #fff;
+
+@media screen and (max-width: 400px) {
+  .menu {
+    width: 100%;
   }
-  .button-show-more {
-    display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-brands {
+    .swiper-wrapper {
+      display: flex;
+      max-width: 768px;
+      height: 100px;
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-bottom: 10px;
+    }
+    .button-show-more {
+      display: none;
+    }
+  }
+  .swiper-techno {
+    .swiper-wrapper {
+      display: flex;
+      max-width: 768px;
+      height: 190px;
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-bottom: 10px;
+    }
+    .button-show-more {
+      display: none;
+    }
+  }
+  .swiper-prices {
+    .swiper-wrapper {
+      display: flex;
+      max-width: 768px;
+      height: 175px;
+      margin-left: 16px;
+      margin-right: 16px;
+      margin-bottom: 10px;
+    }
   }
 }
 
 @media screen and (min-width: 769px) {
-  .swiper-wrapper {
+  .swiper-brands,
+  .swiper-techno {
+    .swiper-wrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      height: 173px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+  }
+  .swiper-prices {
+    .swiper-wrapper {
+      display: table;
+      height: 173px;
+      margin-bottom: 10px;
+    }
+  }
+  .footer {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    height: 173px;
-    margin-bottom: 10px;
-    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .footer__author {
+    text-align: start;
+  }
+  .footer__offerta {
+    text-align: end;
   }
 }
 
@@ -47,7 +103,7 @@
     display: block;
   }
 
-  .content__text-more-btn {
+  .content__text-more-more {
     display: none;
   }
 
@@ -99,8 +155,8 @@
   .button-tools::after {
     content: 'Оставить заявку';
     position: relative;
-    right: 140px;
-    top: 5px;
+    right: 145px;
+    top: 10px;
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
@@ -112,8 +168,8 @@
   .button-search::before {
     content: 'Статус ремонта';
     position: relative;
-    right: 135px;
-    top: 5px;
+    right: 140px;
+    top: 10px;
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
@@ -136,14 +192,37 @@
     margin-right: auto;
     align-self: baseline;
   }
-  #menu {
+  .menu {
     display: flex;
     position: static;
     border: none;
+    width: 320px;
     max-height: 900px;
     box-shadow: none;
   }
-  .button-alt-burger:first-child {
-    display: none;
+  .menu__header {
+    .button-alt-burger:first-child {
+      display: none;
+    }
+  }
+  #modalFeedback,
+  #modalCall {
+    width: 520px;
+    background-color: $bgcolor;
+  }
+  .modal {
+    position: relative;
+    right: -30px;
+    top: -20px;
+    height: 100%;
+    background-color: $white;
+    margin-left: 60px;
+    padding-left: 30px;
+    padding-right: 35px;
+    .button {
+      position: absolute;
+      left: -85px;
+      top: 40px;
+    }
   }
 }

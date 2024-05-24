@@ -73,7 +73,7 @@ module.exports = {
         collapseWhitespace: false
       },
       templateParameters: {
-        imgPath: './static/img/' // Путь к вашим изображениям
+        imgPath: 'img/' // Путь к вашим изображениям
       }
     }),
 

@@ -2,27 +2,16 @@ $fontcolor: #1b1c21;
 $hovercolor: #7e7e82;
 $whitecolor: #fff;
 
-#menu {
+.menu {
+  display: none;
   flex-direction: column;
   margin: 0;
   margin-right: auto;
   padding: 0;
-  width: 320px;
+  min-width: 320px;
   min-height: 100vh;
   background-color: $whitecolor;
   border: none;
-}
-
-#menu[open] {
-  display: flex;
-}
-
-#menu::backdrop {
-  backdrop-filter: blur(5px);
-}
-
-#menu::-webkit-scrollbar {
-  display: none;
 }
 
 .menu__header {
@@ -81,7 +70,7 @@ $whitecolor: #fff;
   top: -10px;
 }
 
-.footer {
+.menu__footer {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
@@ -89,12 +78,12 @@ $whitecolor: #fff;
   margin-bottom: 20px;
 }
 
-.footer__menu {
+.menu__footer-list {
   display: flex;
   margin-bottom: 16px;
 }
 
-.footer__mail {
+.menu__mail {
   display: inline-block;
   text-decoration: none;
   font-style: normal;
@@ -103,7 +92,7 @@ $whitecolor: #fff;
   margin-bottom: 12px;
 }
 
-.footer__phone {
+.menu__phone {
   font-size: 24px;
   font-style: normal;
   text-decoration: none;
@@ -128,7 +117,15 @@ $whitecolor: #fff;
   color: $hovercolor;
 }
 
-.footer__mail:focus,
-.footer__phone:focus {
+.menu__mail:focus,
+.menu__phone:focus {
   color: $hovercolor;
+}
+
+.menu--show {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }

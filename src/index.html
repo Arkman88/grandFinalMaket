@@ -3,25 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
     <title>Services</title>
   </head>
   <body class="body">
     <header class="header">
       <ul class="header__left no-select ul-clear">
         <li class="header__left-burger">
-          <button
-            type="button"
-            onclick="window.menu.showModal()"
-            class="button button-burger hover"
-          ></button>
+          <button type="button" class="button button-burger hover"></button>
         </li>
         <li class="logo header__logo"
           ><a class="hover" href="#"
-            ><img src="../src/img/logo.svg" alt="Логотип компании"
+            ><img src="<%= imgPath %>logo.svg" alt="Логотип компании"
           /></a>
         </li>
       </ul>
@@ -49,7 +41,11 @@
       <section class="content">
         <div class="content__large-bar">
           <div class="content__name">
-            <img class="content__img" src="../src/img/highlight.svg" alt="" />
+            <img
+              class="content__img"
+              src="<%= imgPath %>highlight.svg"
+              alt=""
+            />
             <h1 class="content__name-txt">Услуги и сервисы</h1>
           </div>
           <ul class="content__right-mob no-select ul-clear">
@@ -106,7 +102,7 @@
                   гордимся тем, что к нам обращаются по рекомендациям и, в свою
                   очередь, советуют нас родным и близким.<br
                 /></span>
-                <span class="content__text-more-btn"
+                <span class="content__text-more-more"
                   >Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Placeat illum, sunt quidem non cumque cupiditate atque, eum
                   nisi beatae possimus dolorum cum alias sequi? Eum sit debitis
@@ -126,20 +122,21 @@
                 >
               </p>
             </div>
-            <button class="content__button no-select hover">
-              <span class="content__read-more">Читать далее</span>
+            <button onclick="readMore()" class="button-show-more hover"
+              >Читать далее
+              <span class="content__read-more"></span>
             </button>
           </div>
           <img
             class="content__topic-img"
-            src="../src/img/topic-image.png"
+            src="<%= imgPath %>topic-image.png"
             alt="изображение логотипа компании CPS"
           />
         </article>
       </section>
       <div class="remontBrands">
         <header class="header-swiper"
-          ><h1 class="header-swiper__h"
+          ><h1 class="header-swiper__name"
             >Ремонт техники различных брендов</h1
           ></header
         >
@@ -182,14 +179,14 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <button onclick="readMore()" class="button-show-more hover"
+          <button onclick="readMoreB()" class="button-show-more hover"
             >Показать всё</button
           >
         </div>
       </div>
       <div class="remontTechno">
         <header class="header-swiper"
-          ><h1 class="header-swiper__h"
+          ><h1 class="header-swiper__name"
             >Ремонт различных видов техники</h1
           ></header
         >
@@ -197,122 +194,262 @@
           <div class="swiper swiper-techno">
             <ul class="swiper-wrapper ul-clear">
               <li class="swiper-slide"
-                ><button class="button-link hover"></button
+                >Ремонт ноутбуков<button class="button-link hover"></button
               ></li>
               <li class="swiper-slide"
-                ><button class="button-link hover"></button
+                >Ремонт планшетов<button class="button-link hover"></button
               ></li>
               <li class="swiper-slide"
-                ><button class="button-link hover"></button
+                >Ремонт ПК<button class="button-link hover"></button
               ></li>
               <li class="swiper-slide"
-                ><button class="button-link hover"></button
+                >Ремонт мониторов<button class="button-link hover"></button
               ></li>
               <li class="swiper-slide"
-                ><button class="button-link hover"></button
+                >Ремонт смартфонов<button class="button-link hover"></button
               ></li>
               <li class="swiper-slide"
-                ><button class="button-link hover"></button
+                >Ремонт граммофонов<button class="button-link hover"></button
               ></li>
               <li class="swiper-slide"
-                ><button class="button-link hover"></button
+                >Ремонт принтеров<button class="button-link hover"></button
               ></li>
               <li class="swiper-slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide"
-                ><button class="button-link hover"></button
+                >Ремонт оборудования<button class="button-link hover"></button
               ></li>
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <button onclick="readMore()" class="button-show-more hover"
+          <button onclick="readMoreT()" class="button-show-more hover"
             >Показать всё</button
           >
         </div>
       </div>
+      <div class="prices">
+        <header class="prices__header"
+          ><h1 class="prices__header-name">Цены на услуги</h1></header
+        >
+        <div class="prices__swiper">
+          <table class="swiper swiper-prices">
+            <tbody class="swiper-wrapper">
+              <tr class="swiper-slide">
+                <td>Диагностика</td>
+                <td>Бесплатно</td>
+                <td>30 мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+              <tr class="swiper-slide">
+                <td>Замена дисплея</td>
+                <td>1000р</td>
+                <td>30-120 мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+              <tr class="swiper-slide">
+                <td>Замена полифонического динамика</td>
+                <td>1000р</td>
+                <td>30-120 мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+              <tr class="swiper-slide">
+                <td>Тестирование с выдачей технического заключения</td>
+                <td>1000р</td>
+                <td>30-120 мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+              <tr class="swiper-slide">
+                <td>Замена программного обеспечения</td>
+                <td>1000р</td>
+                <td>30-120мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>
+                  <div
+                    class="swiper-pagination services-cost__pagination"
+                  ></div>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="prices__footer">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.<br />
+            <a href="#">Получить коммерческое предложение</a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__author"
+          ><a href="#"
+            >© 2019 CPS <br />
+            Разработано командой Apesong</a
+          ></div
+        >
+        <div class="footer__policy"
+          ><a href="#">Политика конфиденциальности</a></div
+        >
+        <div class="footer__offerta"
+          ><a href="#"
+            >Информация, размещенная на данной странице, не является публичной
+            офертой</a
+          ></div
+        >
+      </footer>
     </main>
     <div class="menu">
-      <dialog id="menu">
-        <header class="menu__header">
+      <header class="menu__header">
+        <button type="button" class="button button-alt-burger hover"></button>
+        <a class="logo menu__logo" href="#">
+          <img src="<%= imgPath %>logo.svg" alt="Логотип компании" />
+        </a>
+        <button type="button" class="button button-alt-search hover"></button>
+      </header>
+      <main class="menu__main">
+        <nav class="menu__nav">
+          <ul class="menu__list no-select ul-clear">
+            <li class="menu__item"
+              ><a class="menu__link hover" href="#">Ремонт техники</a></li
+            >
+            <li class="menu__item"
+              ><a class="menu__link hover" href="#">Услуги и сервисы</a></li
+            >
+            <li class="menu__item"
+              ><a class="menu__link hover" href="#"
+                >Корпоратвным клиентам</a
+              ></li
+            >
+            <li class="menu__item"
+              ><a class="menu__link hover" href="#">Продавцам техники</a></li
+            >
+            <li class="menu__item"
+              ><a class="menu__link hover" href="#">Партнерам</a></li
+            >
+            <li class="menu__item"
+              ><a class="menu__link hover" href="#">Производителям</a></li
+            >
+            <li class="menu__item"
+              ><a class="menu__link hover" href="#"
+                >Наши сервисные центры</a
+              ></li
+            >
+            <li class="menu__item"
+              ><a class="menu__link hover" href="#">Контакты</a></li
+            >
+          </ul>
+        </nav>
+      </main>
+      <footer class="menu__footer">
+        <ul class="menu__footer-list ul-clear">
+          <li class="menu__call"
+            ><button
+              type="button"
+              onclick="window.modalCall.showModal()"
+              class="button button-call hover"
+            ></button
+          ></li>
+          <li class="menu__chat"
+            ><button
+              type="button"
+              onclick="window.modalFeedback.showModal()"
+              class="button button-chat hover"
+            ></button
+          ></li>
+          <li class="menu__profile"
+            ><button class="button button-profile hover"></button
+          ></li>
+        </ul>
+        <address class="menu__address">
+          <a class="menu__mail hover" href="mailto: mail@cps.com"
+            >mail@cps.com</a
+          ><br />
+          <a class="menu__phone hover" href="tel: 88008908900"
+            >8 800 890 8900</a
+          >
+        </address>
+        <ul class="language ul-clear">
+          <li><a class="language__link hover" href="#">RU</a></li>
+          <li><a class="language__link hover" href="#">EN</a></li>
+          <li><a class="language__link hover" href="#">CH</a></li>
+        </ul>
+      </footer>
+    </div>
+    <dialog id="modalFeedback">
+      <div class="modal">
+        <header class="modal__header">
           <button
             type="button"
-            onclick="window.menu.close()"
-            class="button button-alt-burger"
+            class="button button-alt-burger hover"
+            onclick="window.modalFeedback.close()"
           ></button>
-          <a class="logo menu__logo" href="#">
-            <img src="../src/img/logo.svg" alt="Логотип компании" />
-          </a>
-          <button class="button button-alt-search hover"></button>
+          <h1 class="modal__title">Обратная связь</h1>
         </header>
-        <main class="menu__main">
-          <nav class="menu__nav">
-            <ul class="menu__list no-select ul-clear">
-              <li class="menu__item"
-                ><a class="menu__link hover" href="#">Ремонт техники</a></li
-              >
-              <li class="menu__item"
-                ><a class="menu__link hover" href="#">Услуги и сервисы</a></li
-              >
-              <li class="menu__item"
-                ><a class="menu__link hover" href="#"
-                  >Корпоратвным клиентам</a
-                ></li
-              >
-              <li class="menu__item"
-                ><a class="menu__link hover" href="#">Продавцам техники</a></li
-              >
-              <li class="menu__item"
-                ><a class="menu__link hover" href="#">Партнерам</a></li
-              >
-              <li class="menu__item"
-                ><a class="menu__link hover" href="#">Производителям</a></li
-              >
-              <li class="menu__item"
-                ><a class="menu__link hover" href="#"
-                  >Наши сервисные центры</a
-                ></li
-              >
-              <li class="menu__item"
-                ><a class="menu__link hover" href="#">Контакты</a></li
-              >
-            </ul>
-          </nav>
-        </main>
-        <footer class="footer">
-          <ul class="footer__menu ul-clear">
-            <li class="footer__call"
-              ><button class="button button-call hover"></button
-            ></li>
-            <li class="footer__chat"
-              ><button class="button button-chat hover"></button
-            ></li>
-            <li class="footer__profile"
-              ><button class="button button-profile hover"></button
-            ></li>
-          </ul>
-          <address class="footer__address">
-            <a class="footer__mail hover" href="mailto: mail@cps.com"
-              >mail@cps.com</a
-            ><br />
-            <a class="footer__phone hover" href="tel: 88008908900"
-              >8 800 890 8900</a
+        <form class="modal__form" action="" method="post">
+          <input class="input" type="text" name="name" placeholder="Имя" />
+          <input class="input" type="tel" name="phone" placeholder="Телефон" />
+          <input
+            class="input"
+            type="email"
+            name="email"
+            placeholder="Электронная почта"
+          />
+          <textarea
+            class="input input--width"
+            name="message"
+            placeholder="Сообщение"
+            rows="4"
+          ></textarea>
+          <p
+            >Нажимая "Отправить", вы даете согласие на
+            <a class="modal__link hover" href="#"
+              >обработку персональных данных</a
             >
-          </address>
-          <ul class="language ul-clear">
-            <li><a class="language__link hover" href="#">RU</a></li>
-            <li><a class="language__link hover" href="#">EN</a></li>
-            <li><a class="language__link hover" href="#">CH</a></li>
-          </ul>
-        </footer>
-      </dialog>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            и соглашаетесь с нашей
+            <a class="modal__link hover" href="#"
+              >политикой конфиденциальности</a
+            ></p
+          >
+          <input
+            class="modal__submit hover"
+            type="submit"
+            name="send"
+            value="Отправить"
+          />
+        </form>
+      </div>
+    </dialog>
+    <dialog id="modalCall">
+      <div class="modal">
+        <header class="modal__header">
+          <button
+            type="button"
+            class="button button-alt-burger hover"
+            onclick="window.modalCall.close()"
+          ></button>
+          <h1 class="modal__title">Заказать звонок</h1>
+        </header>
+        <form class="modal__form" action="" method="post">
+          <input class="input" type="tel" name="phone" placeholder="Телефон" />
+          <p
+            >Нажимая "Отправить", вы даете согласие на
+            <a class="modal__link hover" href="#"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с нашей
+            <a class="modal__link hover" href="#"
+              >политикой конфиденциальности</a
+            ></p
+          >
+          <input
+            class="modal__submit hover"
+            type="submit"
+            name="send"
+            value="Отправить"
+          />
+        </form>
+      </div>
+    </dialog>
   </body>
 </html>
