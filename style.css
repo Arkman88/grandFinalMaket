@@ -566,19 +566,19 @@
 
 .remontBrands {
   margin-top: 32px; }
-  .remontBrands .content-swiper {
+  .remontBrands .remontBrands__swiper {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
     margin-bottom: 30px; }
-  .remontBrands .header-swiper {
+  .remontBrands .remontBrands__header {
     margin-left: 26px;
     align-content: center;
     height: 80px;
     background: linear-gradient(90deg, #f8f8f8, #fff); }
-  .remontBrands .header-swiper__name {
+  .remontBrands .remontBrands__header-name {
     text-transform: uppercase;
     font-size: 16px;
     color: #7e7e82;
@@ -589,7 +589,7 @@
   .remontBrands .swiper {
     width: 100%;
     height: 100%; }
-  .remontBrands .swiper-slide {
+  .remontBrands .remontBrands__slide {
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -602,27 +602,27 @@
     background-repeat: no-repeat;
     background-position: 20% 50%;
     background-color: #fff; }
-  .remontBrands .swiper-slide:nth-child(1) {
+  .remontBrands .remontBrands__slide:nth-child(1) {
     background-image: url(./img/acer.svg); }
-  .remontBrands .swiper-slide:nth-child(2) {
+  .remontBrands .remontBrands__slide:nth-child(2) {
     background-image: url(./img/apple.svg); }
-  .remontBrands .swiper-slide:nth-child(3) {
+  .remontBrands .remontBrands__slide:nth-child(3) {
     background-image: url(./img/bosh.svg); }
-  .remontBrands .swiper-slide:nth-child(4) {
+  .remontBrands .remontBrands__slide:nth-child(4) {
     background-image: url(./img/hp.svg); }
-  .remontBrands .swiper-slide:nth-child(5) {
+  .remontBrands .remontBrands__slide:nth-child(5) {
     background-image: url(./img/lenovo.svg); }
-  .remontBrands .swiper-slide:nth-child(6) {
+  .remontBrands .remontBrands__slide:nth-child(6) {
     background-image: url(./img/samsung.svg); }
-  .remontBrands .swiper-slide:nth-child(7) {
+  .remontBrands .remontBrands__slide:nth-child(7) {
     background-image: url(./img/sony.svg); }
-  .remontBrands .swiper-slide:nth-child(8) {
+  .remontBrands .remontBrands__slide:nth-child(8) {
     background-image: url(./img/view.svg); }
-  .remontBrands .swiper-slide:nth-child(9) {
+  .remontBrands .remontBrands__slide:nth-child(9) {
     background-image: url(./img/acer.svg); }
-  .remontBrands .swiper-slide:nth-child(10) {
+  .remontBrands .remontBrands__slide:nth-child(10) {
     background-image: url(./img/acer.svg); }
-  .remontBrands .swiper-slide:nth-child(11) {
+  .remontBrands .remontBrands__slide:nth-child(11) {
     background-image: url(./img/acer.svg); }
   .remontBrands .button-link {
     background: url(./img/brand-link.svg) no-repeat center;
@@ -646,19 +646,19 @@
 
 .remontTechno {
   margin-top: 32px; }
-  .remontTechno .content-swiper {
+  .remontTechno .remontTechno__swiper {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
     margin-bottom: 30px; }
-  .remontTechno .header-swiper {
+  .remontTechno .remontTechno__header {
     margin-left: 26px;
     align-content: center;
     height: 80px;
     background: linear-gradient(90deg, #f8f8f8, #fff); }
-  .remontTechno .header-swiper__name {
+  .remontTechno .remontTechno__header-name {
     text-transform: uppercase;
     font-size: 16px;
     color: #7e7e82;
@@ -669,7 +669,7 @@
   .remontTechno .swiper {
     width: 100%;
     height: 100%; }
-  .remontTechno .swiper-slide {
+  .remontTechno .remontTechno__slide {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -722,7 +722,7 @@
   .prices .swiper {
     width: 100%;
     height: 100%; }
-  .prices .swiper-slide {
+  .prices .prices__slide {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -859,7 +859,7 @@
     width: 100%; } }
 
 @media screen and (max-width: 768px) {
-  .remontBrands .swiper-wrapper {
+  .remontBrands .remontBrands__wrapper {
     display: flex;
     max-width: 768px;
     height: 100px;
@@ -868,7 +868,7 @@
     margin-bottom: 10px; }
   .remontBrands .button-show-more {
     display: none; }
-  .remontTechno .swiper-wrapper {
+  .remontTechno .remontTechno__wrapper {
     display: flex;
     max-width: 768px;
     height: 190px;
@@ -877,36 +877,43 @@
     margin-bottom: 10px; }
   .remontTechno .button-show-more {
     display: none; }
-  .swiper-prices .swiper-wrapper {
+  .prices__wrapper {
     display: flex;
     max-width: 768px;
     height: 175px;
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 10px; }
-  .swiper-prices .swiper-slide .prices__first-column::before {
+  .prices__first-column::before {
     content: 'Ремонтные услуги';
     position: absolute;
     top: 10px;
     color: #7e7e82; }
-  .swiper-prices .swiper-slide .prices__second-column::before {
+  .prices__second-column::before {
     content: 'Цена';
     position: absolute;
     top: 65px;
     color: #7e7e82; }
-  .swiper-prices .swiper-slide .prices__third-column::before {
+  .prices__third-column::before {
     content: 'Срок';
     position: absolute;
     top: 120px;
     color: #7e7e82; }
-  .swiper-prices .swiper-slide .prices__fourth-column {
+  .prices__fourth-column {
     position: absolute;
     top: 135px;
     left: 80px; } }
 
 @media (min-width: 769px) {
-  .swiper-brands .swiper-wrapper,
-  .swiper-techno .swiper-wrapper {
+  .remontBrands__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 173px;
+    margin-bottom: 10px;
+    overflow: hidden; }
+  .remontTechno__wrapper {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -917,15 +924,15 @@
   .swiper-prices .prices__table-header {
     display: table;
     width: 100%; }
-  .swiper-prices .swiper-wrapper {
+  .swiper-prices .prices__wrapper {
     display: table;
     height: auto;
     margin-bottom: 10px; }
-  .swiper-prices .swiper-slide {
+  .swiper-prices .prices__slide {
     display: table;
     width: 95%;
-    height: 64px;
-    text-align: start; }
+    height: 44px;
+    text-align: left; }
   .footer {
     display: flex;
     flex-direction: row;
