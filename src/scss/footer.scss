@@ -3,7 +3,7 @@ $footer-font-color: #7e7e82;
 .footer__author,
 .footer__policy,
 .footer__offerta {
-  max-width: 220px;
+  max-width: 300px;
 }
 
 .footer {
@@ -14,5 +14,9 @@ $footer-font-color: #7e7e82;
   padding: 24px;
   align-items: center;
   font-size: 14px;
+}
+
+.footer__link {
+  text-decoration: none;
   color: $footer-font-color;
 }

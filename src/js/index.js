@@ -4,9 +4,11 @@ import Swiper from 'swiper'
 window.addEventListener('DOMContentLoaded', () => {
   let brands = document.querySelector('.remontBrands')
   let techno = document.querySelector('.remontTechno')
+  let content = document.querySelector('.content__text')
 
   brands.querySelector('.button-show-more').onclick = readMoreB
   techno.querySelector('.button-show-more').onclick = readMoreT
+  content.querySelector('.button-show-more').onclick = readMoreContent
 
   function readMoreB() {
     const more = brands.querySelector('.swiper-wrapper')
@@ -37,6 +39,53 @@ window.addEventListener('DOMContentLoaded', () => {
       more.style.height = '173px'
       btn.innerHTML = 'Показать всё'
       btn.style.background = 'url(img/expand.svg) no-repeat'
+    }
+  }
+
+  function readMoreContent() {
+    const width = window.outerWidth
+    const text = content.querySelector('.content__full-text')
+    const textMore = content.querySelector('.content__text-more')
+    const textAll = content.querySelector('.content__text-all')
+    const btn = content.querySelector('.button-show-more')
+    if (width < 600) {
+      if (btn.innerHTML !== 'Скрыть') {
+        text.classList.add('content--show')
+        textMore.classList.add('content--show')
+        textAll.classList.add('content--show')
+        btn.innerHTML = 'Скрыть'
+        btn.style.background = 'url(img/expand_alt.svg) no-repeat'
+      } else {
+        text.classList.remove('content--show')
+        textMore.classList.remove('content--show')
+        textAll.classList.remove('content--show')
+        btn.innerHTML = 'Читать далее'
+        btn.style.background = 'url(img/expand.svg) no-repeat'
+      }
+    }
+    if (width >= 600 && width < 1050) {
+      if (btn.innerHTML !== 'Скрыть') {
+        textMore.classList.add('content--show')
+        textAll.classList.add('content--show')
+        btn.innerHTML = 'Скрыть'
+        btn.style.background = 'url(img/expand_alt.svg) no-repeat'
+      } else {
+        textMore.classList.remove('content--show')
+        textAll.classList.remove('content--show')
+        btn.innerHTML = 'Читать далее'
+        btn.style.background = 'url(img/expand.svg) no-repeat'
+      }
+    }
+    if (width >= 1050) {
+      if (btn.innerHTML !== 'Скрыть') {
+        textAll.classList.add('content--show')
+        btn.innerHTML = 'Скрыть'
+        btn.style.background = 'url(img/expand_alt.svg) no-repeat'
+      } else {
+        textAll.classList.remove('content--show')
+        btn.innerHTML = 'Читать далее'
+        btn.style.background = 'url(img/expand.svg) no-repeat'
+      }
     }
   }
 
@@ -123,6 +172,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })
 
+  //обработчик клика модалок
   const openCall = menu.querySelector('.button-call')
   const openFeed = menu.querySelector('.button-chat')
 

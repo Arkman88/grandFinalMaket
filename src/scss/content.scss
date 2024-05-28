@@ -142,3 +142,25 @@ $bgcolor: #f8f8f8;
 .content__right-mob {
   display: none;
 }
+
+.button-show-more {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  width: 144px;
+  height: 24px;
+  margin-left: 5px;
+  background-image: url(../img/expand.svg);
+  background-repeat: no-repeat;
+}
+
+.content__text-all {
+  display: none;
+}
+
+.content--show {
+  display: inline;
+}

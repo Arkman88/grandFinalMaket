@@ -3,24 +3,21 @@ $whitecolor: #fff;
 $gradcolor: #f8f8f8;
 $swiperBordCol: #eaeaea;
 $headerSwiperCol: #7e7e82;
+$linkColor: #1b1c21;
 
 .prices {
   margin-top: 32px;
-
-  .prices__swiper {
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    margin-bottom: 30px;
-  }
 
   .prices__header {
     margin-left: 26px;
     align-content: center;
     height: 80px;
     background: linear-gradient(90deg, $gradcolor, $whitecolor);
+  }
+
+  .prices__table-header {
+    display: none;
+    color: $headerSwiperCol;
   }
 
   .prices__header-name {
@@ -42,7 +39,7 @@ $headerSwiperCol: #7e7e82;
     flex-direction: column;
     text-align: center;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     align-items: start;
     gap: 16px;
     border: 1px solid $swiperBordCol;
@@ -52,4 +49,42 @@ $headerSwiperCol: #7e7e82;
     background-color: $whitecolor;
     padding: 16px;
   }
+}
+
+.prices__footer {
+  font-size: 14px;
+  padding: 25px;
+}
+
+.prices__commercial-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: $linkColor;
+}
+
+.prices__commercial-link::after {
+  content: url(../img/Line.svg);
+  width: 6px;
+  height: 10px;
+  position: relative;
+  left: 7px;
+}
+
+.prices__button {
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  border: none;
+  background-color: $buttoncolor;
+  color: $whitecolor;
+  text-transform: uppercase;
+  position: relative;
+  left: 50px;
+}
+
+.prices__button::after {
+  content: url(../img/dropdown.svg);
+  position: relative;
+  left: 10px;
 }

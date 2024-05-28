@@ -102,7 +102,7 @@
                   гордимся тем, что к нам обращаются по рекомендациям и, в свою
                   очередь, советуют нас родным и близким.<br
                 /></span>
-                <span class="content__text-more-more"
+                <p class="content__text-all"
                   >Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Placeat illum, sunt quidem non cumque cupiditate atque, eum
                   nisi beatae possimus dolorum cum alias sequi? Eum sit debitis
@@ -118,11 +118,11 @@
                   cupiditate molestiae consequuntur, architecto porro nihil
                   aliquam earum sapiente quisquam odio deleniti. Expedita
                   tempora possimus eveniet quo ipsa enim blanditiis adipisci
-                  sunt iure at in libero, id in!</span
+                  sunt iure at in libero, id in!</p
                 >
               </p>
             </div>
-            <button onclick="readMore()" class="button-show-more hover"
+            <button type="button" onclick="readMoreContent()" class="button-show-more hover"
               >Читать далее
               <span class="content__read-more"></span>
             </button>
@@ -231,44 +231,56 @@
         >
         <div class="prices__swiper">
           <table class="swiper swiper-prices">
+            <thead class="prices__table-header">
+              <tr>
+                <th class="prices__first-column">Ремонтные услуги</th>
+                <th class="prices__second-column">Цена</th>
+                <th class="prices__third-column">Срок</th>
+                <th class="prices__fourth-column"> </th>
+              </tr>
+            </thead>
             <tbody class="swiper-wrapper">
               <tr class="swiper-slide">
-                <td>Диагностика</td>
-                <td>Бесплатно</td>
-                <td>30 мин</td>
-                <td><button class="prices__button">Заказать</button></td>
+                <td class="prices__first-column">Диагностика</td>
+                <td class="prices__second-column">Бесплатно</td>
+                <td class="prices__third-column">30 мин</td>
+                <td class="prices__fourth-column"><button class="prices__button">Заказать</button></td>
               </tr>
               <tr class="swiper-slide">
-                <td>Замена дисплея</td>
-                <td>1000р</td>
-                <td>30-120 мин</td>
-                <td><button class="prices__button">Заказать</button></td>
+                <td class="prices__first-column">Замена дисплея</td>
+                <td class="prices__second-column">1000р</td>
+                <td class="prices__third-column">30-120 мин</td>
+                <td class="prices__fourth-column"><button class="prices__button">Заказать</button></td>
               </tr>
               <tr class="swiper-slide">
-                <td>Замена полифонического динамика</td>
-                <td>1000р</td>
-                <td>30-120 мин</td>
-                <td><button class="prices__button">Заказать</button></td>
+                <td class="prices__first-column"
+                  >Замена полифонического динамика</td
+                >
+                <td class="prices__second-column">1000р</td>
+                <td class="prices__third-column">30-120 мин</td>
+                <td class="prices__fourth-column"><button class="prices__button">Заказать</button></td>
               </tr>
               <tr class="swiper-slide">
-                <td>Тестирование с выдачей технического заключения</td>
-                <td>1000р</td>
-                <td>30-120 мин</td>
-                <td><button class="prices__button">Заказать</button></td>
+                <td class="prices__first-column"
+                  >Тестирование с выдачей технического заключения</td
+                >
+                <td class="prices__second-column">1000р</td>
+                <td class="prices__third-column">30-120 мин</td>
+                <td class="prices__fourth-column"><button class="prices__button">Заказать</button></td>
               </tr>
               <tr class="swiper-slide">
-                <td>Замена программного обеспечения</td>
-                <td>1000р</td>
-                <td>30-120мин</td>
-                <td><button class="prices__button">Заказать</button></td>
+                <td class="prices__first-column"
+                  >Замена программного обеспечения</td
+                >
+                <td class="prices__second-column">1000р</td>
+                <td class="prices__third-column">30-120мин</td>
+                <td class="prices__fourth-column"><button class="prices__button">Заказать</button></td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
                 <td>
-                  <div
-                    class="swiper-pagination services-cost__pagination"
-                  ></div>
+                  <div class="swiper-pagination"></div>
                 </td>
               </tr>
             </tfoot>
@@ -276,23 +288,25 @@
           <div class="prices__footer">
             Все цены указаны с учетом НДС. Стоимость ремонта указана на
             единичную услугу. Для получения коммерческого предложения на
-            постоянное обслуживание, оставьте заявку.<br />
-            <a href="#">Получить коммерческое предложение</a>
+            постоянное обслуживание, оставьте заявку.<br /><br>
+            <a class="prices__commercial-link hover" href="#"
+              >Получить коммерческое предложение</a
+            >
           </div>
         </div>
       </div>
       <footer class="footer">
         <div class="footer__author"
-          ><a href="#"
+          ><a class="footer__link hover" href="#"
             >© 2019 CPS <br />
             Разработано командой Apesong</a
           ></div
         >
         <div class="footer__policy"
-          ><a href="#">Политика конфиденциальности</a></div
+          ><a class="footer__link hover" href="#">Политика конфиденциальности</a></div
         >
         <div class="footer__offerta"
-          ><a href="#"
+          ><a class="footer__link hover" href="#"
             >Информация, размещенная на данной странице, не является публичной
             офертой</a
           ></div
