@@ -4,10 +4,10 @@ $gradcolor: #f8f8f8;
 $swiperBordCol: #eaeaea;
 $headerSwiperCol: #7e7e82;
 
-.remontBrands {
+.remontTechno {
   margin-top: 32px;
 
-  .content-swiper {
+  .remontTechno__swiper {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
@@ -16,14 +16,14 @@ $headerSwiperCol: #7e7e82;
     margin-bottom: 30px;
   }
 
-  .header-swiper {
+  .remontTechno__header {
     margin-left: 26px;
     align-content: center;
     height: 80px;
     background: linear-gradient(90deg, $gradcolor, $whitecolor);
   }
 
-  .header-swiper__name {
+  .remontTechno__header-name {
     text-transform: uppercase;
     font-size: 16px;
     color: $headerSwiperCol;
@@ -37,67 +37,22 @@ $headerSwiperCol: #7e7e82;
     width: 100%;
     height: 100%;
   }
-  .swiper-slide {
+  .remontTechno__slide {
     text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 600;
     align-items: center;
     border: 1px solid $swiperBordCol;
     border-radius: 6px;
     width: 240px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-position: 20% 50%;
+    height: 160px;
     background-color: $whitecolor;
-  }
-
-  .swiper-slide:nth-child(1) {
-    background-image: url(../img/brends/acer.svg);
-  }
-
-  .swiper-slide:nth-child(2) {
-    background-image: url(../img/brends/apple.svg);
-  }
-
-  .swiper-slide:nth-child(3) {
-    background-image: url(../img/brends/bosh.svg);
-  }
-
-  .swiper-slide:nth-child(4) {
-    background-image: url(../img/brends/hp.svg);
-  }
-
-  .swiper-slide:nth-child(5) {
-    background-image: url(../img/brends/lenovo.svg);
-  }
-
-  .swiper-slide:nth-child(6) {
-    background-image: url(../img/brends/samsung.svg);
-  }
-
-  .swiper-slide:nth-child(7) {
-    background-image: url(../img/brends/sony.svg);
-  }
-
-  .swiper-slide:nth-child(8) {
-    background-image: url(../img/brends/view.svg);
-  }
-
-  .swiper-slide:nth-child(9) {
-    background-image: url(../img/brends/acer.svg);
-  }
-
-  .swiper-slide:nth-child(10) {
-    background-image: url(../img/brends/acer.svg);
-  }
-
-  .swiper-slide:nth-child(11) {
-    background-image: url(../img/brends/acer.svg);
   }
 
   .button-link {
     background: url(../img/brends/brand-link.svg) no-repeat center;
+    position: relative;
+    top: 40%;
     width: 40px;
     height: 40px;
     margin-right: 16px;

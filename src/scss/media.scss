@@ -9,7 +9,7 @@ $white: #fff;
 
 @media screen and (max-width: 768px) {
   .remontBrands {
-    .swiper-wrapper {
+    .remontBrands__wrapper {
       display: flex;
       max-width: 768px;
       height: 100px;
@@ -22,7 +22,7 @@ $white: #fff;
     }
   }
   .remontTechno {
-    .swiper-wrapper {
+    .remontTechno__wrapper {
       display: flex;
       max-width: 768px;
       height: 190px;
@@ -34,58 +34,62 @@ $white: #fff;
       display: none;
     }
   }
-  .swiper-prices {
-    .swiper-wrapper {
-      display: flex;
-      max-width: 768px;
-      height: 175px;
-      margin-left: 16px;
-      margin-right: 16px;
-      margin-bottom: 10px;
-    }
-    .swiper-slide {
-      .prices__first-column::before {
-        content: 'Ремонтные услуги';
-        position: absolute;
-        top: 10px;
-        color: $headerSwiperCol;
-      }
 
-      .prices__second-column::before {
-        content: 'Цена';
-        position: absolute;
-        top: 65px;
-        color: $headerSwiperCol;
-      }
+  .prices__wrapper {
+    display: flex;
+    max-width: 768px;
+    height: 175px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+  }
 
-      .prices__third-column::before {
-        content: 'Срок';
-        position: absolute;
-        top: 120px;
-        color: $headerSwiperCol;
-      }
+  .prices__first-column::before {
+    content: 'Ремонтные услуги';
+    position: absolute;
+    top: 10px;
+    color: $headerSwiperCol;
+  }
 
-      .prices__fourth-column {
-        position: absolute;
-        top: 135px;
-        left: 80px;
-      }
-    }
+  .prices__second-column::before {
+    content: 'Цена';
+    position: absolute;
+    top: 65px;
+    color: $headerSwiperCol;
+  }
+
+  .prices__third-column::before {
+    content: 'Срок';
+    position: absolute;
+    top: 120px;
+    color: $headerSwiperCol;
+  }
+
+  .prices__fourth-column {
+    position: absolute;
+    top: 135px;
+    left: 80px;
   }
 }
 
 @media (min-width: 769px) {
-  .swiper-brands,
-  .swiper-techno {
-    .swiper-wrapper {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 30px;
-      height: 173px;
-      margin-bottom: 10px;
-      overflow: hidden;
-    }
+  .remontBrands__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 173px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .remontTechno__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 173px;
+    margin-bottom: 10px;
+    overflow: hidden;
   }
 
   .swiper-prices {
@@ -93,16 +97,16 @@ $white: #fff;
       display: table;
       width: 100%;
     }
-    .swiper-wrapper {
+    .prices__wrapper {
       display: table;
       height: auto;
       margin-bottom: 10px;
     }
-    .swiper-slide {
+    .prices__slide {
       display: table;
       width: 95%;
-      height: 64px;
-      text-align: start;
+      height: 44px;
+      text-align: left;
     }
   }
   .footer {

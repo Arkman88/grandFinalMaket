@@ -4,10 +4,10 @@ $gradcolor: #f8f8f8;
 $swiperBordCol: #eaeaea;
 $headerSwiperCol: #7e7e82;
 
-.remontTechno {
+.remontBrands {
   margin-top: 32px;
 
-  .content-swiper {
+  .remontBrands__swiper {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
@@ -16,14 +16,14 @@ $headerSwiperCol: #7e7e82;
     margin-bottom: 30px;
   }
 
-  .header-swiper {
+  .remontBrands__header {
     margin-left: 26px;
     align-content: center;
     height: 80px;
     background: linear-gradient(90deg, $gradcolor, $whitecolor);
   }
 
-  .header-swiper__name {
+  .remontBrands__header-name {
     text-transform: uppercase;
     font-size: 16px;
     color: $headerSwiperCol;
@@ -37,22 +37,67 @@ $headerSwiperCol: #7e7e82;
     width: 100%;
     height: 100%;
   }
-  .swiper-slide {
+  .remontBrands__slide {
     text-align: center;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     border: 1px solid $swiperBordCol;
     border-radius: 6px;
     width: 240px;
-    height: 160px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
     background-color: $whitecolor;
+  }
+
+  .remontBrands__slide:nth-child(1) {
+    background-image: url(../img/brends/acer.svg);
+  }
+
+  .remontBrands__slide:nth-child(2) {
+    background-image: url(../img/brends/apple.svg);
+  }
+
+  .remontBrands__slide:nth-child(3) {
+    background-image: url(../img/brends/bosh.svg);
+  }
+
+  .remontBrands__slide:nth-child(4) {
+    background-image: url(../img/brends/hp.svg);
+  }
+
+  .remontBrands__slide:nth-child(5) {
+    background-image: url(../img/brends/lenovo.svg);
+  }
+
+  .remontBrands__slide:nth-child(6) {
+    background-image: url(../img/brends/samsung.svg);
+  }
+
+  .remontBrands__slide:nth-child(7) {
+    background-image: url(../img/brends/sony.svg);
+  }
+
+  .remontBrands__slide:nth-child(8) {
+    background-image: url(../img/brends/view.svg);
+  }
+
+  .remontBrands__slide:nth-child(9) {
+    background-image: url(../img/brends/acer.svg);
+  }
+
+  .remontBrands__slide:nth-child(10) {
+    background-image: url(../img/brends/acer.svg);
+  }
+
+  .remontBrands__slide:nth-child(11) {
+    background-image: url(../img/brends/acer.svg);
   }
 
   .button-link {
     background: url(../img/brends/brand-link.svg) no-repeat center;
-    position: relative;
-    top: 40%;
     width: 40px;
     height: 40px;
     margin-right: 16px;
