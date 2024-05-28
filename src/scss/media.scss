@@ -43,6 +43,34 @@ $white: #fff;
       margin-right: 16px;
       margin-bottom: 10px;
     }
+    .swiper-slide {
+      .prices__first-column::before {
+        content: 'Ремонтные услуги';
+        position: absolute;
+        top: 10px;
+        color: $headerSwiperCol;
+      }
+
+      .prices__second-column::before {
+        content: 'Цена';
+        position: absolute;
+        top: 65px;
+        color: $headerSwiperCol;
+      }
+
+      .prices__third-column::before {
+        content: 'Срок';
+        position: absolute;
+        top: 120px;
+        color: $headerSwiperCol;
+      }
+
+      .prices__fourth-column {
+        position: absolute;
+        top: 135px;
+        left: 80px;
+      }
+    }
   }
 }
 

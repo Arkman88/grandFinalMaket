@@ -37,17 +37,22 @@ $linkColor: #1b1c21;
   .swiper-slide {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 14px;
     font-weight: 400;
     align-items: start;
-    gap: 16px;
+    gap: 35px;
     border: 1px solid $swiperBordCol;
     border-radius: 6px;
     width: 240px;
     height: 200px;
     background-color: $whitecolor;
     padding: 16px;
+    padding-top: 30px;
+    font-family: TT Lakes;
+
+    line-height: 18px;
+    letter-spacing: 0.2px;
   }
 }
 
