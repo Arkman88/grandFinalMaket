@@ -1511,9 +1511,6 @@ button.swiper-pagination-bullet {
     margin-right: auto; }
   .header {
     display: none; }
-  .content__topic-img {
-    width: 531px;
-    height: 307px; }
   .content__text-more {
     display: inline; }
   .content__large-bar {
@@ -1587,6 +1584,11 @@ button.swiper-pagination-bullet {
       position: absolute;
       left: -85px;
       top: 40px; } }
+
+@media (min-width: 1200px) {
+  .content__topic-img {
+    width: 531px;
+    height: 307px; } }
 
 
 /*# sourceMappingURL=style.css.map*/
