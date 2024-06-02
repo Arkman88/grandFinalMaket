@@ -187,11 +187,6 @@ $white: #fff;
   .header {
     display: none;
   }
-  //посмотреть высоту и ширину картинки????
-  .content__topic-img {
-    width: 531px;
-    height: 307px;
-  }
   .content__text-more {
     display: inline;
   }
@@ -283,5 +278,11 @@ $white: #fff;
       left: -85px;
       top: 40px;
     }
+  }
+}
+@media (min-width: 1200px) {
+  .content__topic-img {
+    width: 531px;
+    height: 307px;
   }
 }
