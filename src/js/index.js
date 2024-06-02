@@ -1,5 +1,7 @@
+import { Pagination } from 'swiper/modules'
 import '../scss/style.scss'
-import Swiper from 'swiper'
+import Swiper, { pagination } from 'swiper'
+Swiper.use([Pagination])
 
 window.addEventListener('DOMContentLoaded', () => {
   let brands = document.querySelector('.remontBrands')
@@ -154,6 +156,7 @@ window.addEventListener('DOMContentLoaded', () => {
     menu.classList.remove('menu--show')
     main.classList.remove('blur')
     header.classList.remove('blur')
+    body.classList.remove('blur')
   })
 
   document.addEventListener('keydown', (evt) => {
@@ -161,29 +164,42 @@ window.addEventListener('DOMContentLoaded', () => {
       menu.classList.remove('menu--show')
       main.classList.remove('blur')
       header.classList.remove('blur')
+      body.classList.remove('blur')
     }
   })
 
   window.addEventListener('click', function (e) {
-    if (!e.target.matches('.button-burger') && !e.target.closest('.menu')) {
+    if (
+      !e.target.matches('.button-burger') &&
+      !e.target.closest('.menu') &&
+      !e.target.closest('.header__right-pad')
+    ) {
       menu.classList.remove('menu--show')
       main.classList.remove('blur')
       header.classList.remove('blur')
+      body.classList.remove('blur')
     }
   })
 
   //обработчик клика модалок
   const openCall = menu.querySelector('.button-call')
+  const openCallH = header.querySelector('.button-call')
   const openFeed = menu.querySelector('.button-chat')
+  const openFeedH = header.querySelector('.button-chat')
+  const body = document.querySelector('.body')
 
   openFeed.addEventListener('click', () => {
     menu.classList.remove('menu--show')
-    main.classList.add('blur')
-    header.classList.add('blur')
+    body.classList.add('blur')
   })
   openCall.addEventListener('click', () => {
     menu.classList.remove('menu--show')
-    main.classList.add('blur')
-    header.classList.add('blur')
+    body.classList.add('blur')
+  })
+  openFeedH.addEventListener('click', () => {
+    body.classList.add('blur')
+  })
+  openCallH.addEventListener('click', () => {
+    body.classList.add('blur')
   })
 })

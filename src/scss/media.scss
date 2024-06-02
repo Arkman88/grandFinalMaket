@@ -38,7 +38,7 @@ $white: #fff;
   .prices__wrapper {
     display: flex;
     max-width: 768px;
-    height: 175px;
+    height: 195px;
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 10px;
@@ -106,7 +106,7 @@ $white: #fff;
       display: table;
       width: 95%;
       height: 44px;
-      text-align: left;
+      text-align: start;
     }
   }
   .footer {
@@ -178,15 +178,16 @@ $white: #fff;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    max-width: 1440px;
-    min-width: 1360px;
+    max-width: 1340px;
     align-items: start;
     margin-left: auto;
     margin-right: auto;
   }
+
   .header {
     display: none;
   }
+  //посмотреть высоту и ширину картинки????
   .content__topic-img {
     width: 531px;
     height: 307px;
@@ -251,11 +252,11 @@ $white: #fff;
     align-self: baseline;
   }
   .menu {
-    display: flex;
-    position: static;
+    display: block;
+    justify-content: space-between;
     border: none;
     width: 320px;
-    max-height: 900px;
+    height: 100%;
     box-shadow: none;
   }
   .menu__header {

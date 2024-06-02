@@ -13,6 +13,7 @@ $linkColor: #1b1c21;
     align-content: center;
     height: 80px;
     background: linear-gradient(90deg, $gradcolor, $whitecolor);
+    margin-bottom: 20px;
   }
 
   .prices__table-header {
@@ -45,7 +46,7 @@ $linkColor: #1b1c21;
     border: 1px solid $swiperBordCol;
     border-radius: 6px;
     width: 240px;
-    height: 200px;
+    height: 130px;
     background-color: $whitecolor;
     padding: 16px;
     padding-top: 30px;
