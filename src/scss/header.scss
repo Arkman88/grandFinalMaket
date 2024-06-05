@@ -1,75 +1,74 @@
 $whitecolor: #fff;
-$shadowCol: #D9FFF5;
-
+$shadowCol: #d9fff5;
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    height: 88px; 
-    background-color: #fff;
-    box-shadow: 0 1px 0 $shadowCol;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  background-color: #fff;
+  box-shadow: 0 1px 0 $shadowCol;
 }
 
 .header__left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;      
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.button-burger {
-    background-image: url(../img/burger.svg); 
-    margin-left: 16px;  
+.button__burger {
+  background-image: url(../img/burger.svg);
+  margin-left: 16px;
 }
 
 .logo {
-    width: 96.55px;
-    height: 50.81px;    
+  width: 96.55px;
+  height: 50.81px;
 }
 
 .header__logo {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .header__right-pad {
-    display: none;
+  display: none;
 }
 
-.button-call {
-    background-image: url(../img/call.svg);
-    margin-right: 16px;
+.button__call {
+  background-image: url(../img/call.svg);
+  margin-right: 16px;
 }
 
-.button-chat {
-    background-image: url(../img/chat.svg);
-    margin-right: 16px;
+.button__chat {
+  background-image: url(../img/chat.svg);
+  margin-right: 16px;
 }
 
-.button-profile {
-    background-image: url(../img/profile.svg);
-    margin-right: 30px;
+.button__profile {
+  background-image: url(../img/profile.svg);
+  margin-right: 30px;
 }
 
 .header__right-mob {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.button-tools {
-    background-image: url(../img/tools.svg);
-    margin-right: 16px;
-} 
-
-.button-tools::after {
-    content: url(../img/divider.svg);
-    position: relative;
-    width: 2px;
-    height: 32px;
-    right: 35px;
+.button__tools {
+  background-image: url(../img/tools.svg);
+  margin-right: 16px;
 }
 
-.button-search {
-    background-image: url(../img/search.svg);
-    margin-right: 16px;
-} 
+.button__tools::after {
+  content: url(../img/divider.svg);
+  position: relative;
+  width: 2px;
+  height: 32px;
+  right: 35px;
+}
+
+.button__search {
+  background-image: url(../img/search.svg);
+  margin-right: 16px;
+}

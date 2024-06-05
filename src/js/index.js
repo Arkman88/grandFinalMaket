@@ -140,8 +140,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Обработчик клика бургер меню
   let menu = document.querySelector('.menu')
-  let openMenuButton = document.querySelector('.button-burger')
-  let closeMenuButton = menu.querySelector('.button-alt-burger')
+  let openMenuButton = document.querySelector('.button__burger')
+  let closeMenuButton = menu.querySelector('.button__alt-burger')
   let main = document.querySelector('.main')
   let header = document.querySelector('.header')
 
@@ -170,23 +170,30 @@ window.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('click', function (e) {
     if (
-      !e.target.matches('.button-burger') &&
+      !e.target.matches('.button__burger') &&
       !e.target.closest('.menu') &&
-      !e.target.closest('.header__right-pad')
+      !e.target.closest('.header__right-pad') &&
+      !e.target.closest('.modal')
     ) {
       menu.classList.remove('menu--show')
       main.classList.remove('blur')
       header.classList.remove('blur')
       body.classList.remove('blur')
+      modalF.close()
+      modalC.close()
     }
   })
 
   //обработчик клика модалок
-  const openCall = menu.querySelector('.button-call')
-  const openCallH = header.querySelector('.button-call')
-  const openFeed = menu.querySelector('.button-chat')
-  const openFeedH = header.querySelector('.button-chat')
+  const openCall = menu.querySelector('.button__call')
+  const openCallH = header.querySelector('.button__call')
+  const openFeed = menu.querySelector('.button__chat')
+  const openFeedH = header.querySelector('.button__chat')
   const body = document.querySelector('.body')
+  const modalF = document.getElementById('modalFeedback')
+  const modalC = document.getElementById('modalCall')
+  const modalCloseBtnF = modalF.querySelector('.button__alt-burger')
+  const modalCloseBtnC = modalC.querySelector('.button__alt-burger')
 
   openFeed.addEventListener('click', () => {
     menu.classList.remove('menu--show')
@@ -201,5 +208,11 @@ window.addEventListener('DOMContentLoaded', () => {
   })
   openCallH.addEventListener('click', () => {
     body.classList.add('blur')
+  })
+  modalCloseBtnF.addEventListener('click', function () {
+    body.classList.remove('blur')
+  })
+  modalCloseBtnC.addEventListener('click', function () {
+    body.classList.remove('blur')
   })
 })

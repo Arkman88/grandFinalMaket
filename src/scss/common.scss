@@ -1,5 +1,6 @@
 $bgcolor: #f8f8f8;
 $buttoncolor: #ff3e79;
+$headerSwiperCol: #7e7e82;
 
 @font-face {
   font-family: 'TTLakes';
@@ -47,6 +48,16 @@ $buttoncolor: #ff3e79;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
+}
+
+.slider-header-name {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $headerSwiperCol;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
 }
 
 .blur {

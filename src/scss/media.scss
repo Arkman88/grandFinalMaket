@@ -145,7 +145,7 @@ $bg-main: #f8f8f8;
 }
 
 @media (min-width: 600px) {
-  .button-burger::after {
+  .button__burger::after {
     content: url(../img/divider.svg);
     height: 32px;
     width: 2px;
@@ -212,7 +212,7 @@ $bg-main: #f8f8f8;
     align-items: center;
     margin-bottom: 10px;
   }
-  .button-tools::after {
+  .button__tools::after {
     content: 'Оставить заявку';
     position: relative;
     right: 145px;
@@ -221,11 +221,11 @@ $bg-main: #f8f8f8;
     font-weight: 600;
     white-space: nowrap;
   }
-  .button-tools {
+  .button__tools {
     display: flex;
     margin-right: 160px;
   }
-  .button-search::before {
+  .button__search::before {
     content: 'Статус ремонта';
     position: relative;
     right: 140px;
@@ -234,7 +234,7 @@ $bg-main: #f8f8f8;
     font-weight: 600;
     white-space: nowrap;
   }
-  .button-search {
+  .button__search {
     display: flex;
     margin-right: 10px;
   }
@@ -262,7 +262,7 @@ $bg-main: #f8f8f8;
     box-shadow: none;
   }
   .menu__header {
-    .button-alt-burger:first-child {
+    .button__alt-burger:first-child {
       display: none;
     }
   }

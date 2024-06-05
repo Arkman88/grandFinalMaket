@@ -9,31 +9,29 @@
     <header class="header">
       <ul class="header__left no-select ul-clear">
         <li class="header__left-burger">
-          <button type="button" class="button button-burger hover"></button>
+          <button type="button" class="button button__burger hover"></button>
         </li>
-        <li class="logo header__logo"
-          ><a class="hover" href="#"
-            ><img src="<%= imgPath %>logo.svg" alt="Логотип компании"
-          /></a>
+        <li class="logo header__logo"><a class="hover" href="#">
+          <img src="<%= imgPath %>logo.svg" alt="Логотип компании"/></a>
         </li>
       </ul>
       <ul class="header__right-pad no-select ul-clear">
         <li class="header__right-call">
-          <button type="button" class="button button-call hover" onclick="window.modalCall.showModal()"></button>
+          <button type="button" class="button button__call hover" onclick="window.modalCall.showModal()"></button>
         </li>
         <li class="header__right-chat">
-          <button type="button" class="button button-chat hover" onclick="window.modalFeedback.showModal()"></button>
+          <button type="button" class="button button__chat hover" onclick="window.modalFeedback.showModal()"></button>
         </li>
         <li class="header__right-profile">
-          <button class="button button-profile hover"></button>
+          <button class="button button__profile hover"></button>
         </li>
       </ul>
       <ul class="header__right-mob no-select ul-clear">
         <li class="header__right-tools">
-          <button class="button button-tools hover"></button>
+          <button class="button button__tools hover"></button>
         </li>
         <li class="header__right-search">
-          <button class="button button-search hover"></button>
+          <button class="button button__search hover"></button>
         </li>
       </ul>
     </header>
@@ -41,69 +39,40 @@
       <section class="content">
         <div class="content__large-bar">
           <div class="content__name">
-            <img
-              class="content__img"
-              src="<%= imgPath %>highlight.svg"
-              alt=""
-            />
+            <img class="content__img" src="<%= imgPath %>highlight.svg" alt=""/>
             <h1 class="content__name-txt">Услуги и сервисы</h1>
           </div>
           <ul class="content__right-mob no-select ul-clear">
             <li class="content__right-tools">
-              <button class="button button-tools hover"></button>
+              <button class="button button__tools hover"></button>
             </li>
             <li class="content__right-search">
-              <button class="button button-search hover"></button>
+              <button class="button button__search hover"></button>
             </li>
           </ul>
         </div>
         <nav>
           <ul class="content__menu no-select ul-clear">
-            <li
-              ><a class="content__menu-link hover" href="#" fo
-                >Ремонтируемые устройства</a
-              ></li
-            >
-            <li
-              ><a class="content__menu-link hover" href="#"
-                >Ремонтируемые бренды</a
-              ></li
-            >
-            <li
-              ><a class="content__menu-link hover" href="#"
-                >Цены на услуги</a
-              ></li
-            >
-            <li
-              ><a class="content__menu-link hover" href="#"
-                >Адреса сервисных центров</a
-              ></li
-            >
-            <li
-              ><a class="content__menu-link hover" href="#"
-                >Специальные цены</a
-              ></li
-            >
+            <li><a class="content__menu-link hover" href="#">Ремонтируемые устройства</a></li>
+            <li><a class="content__menu-link hover" href="#">Ремонтируемые бренды</a></li>
+            <li><a class="content__menu-link hover" href="#">Цены на услуги</a></li>
+            <li><a class="content__menu-link hover" href="#">Адреса сервисных центров</a></li>
+            <li><a class="content__menu-link hover" href="#">Специальные цены</a></li>
             <li><a class="content__menu-link hover" href="#">Отзывы</a></li>
           </ul>
         </nav>
         <article class="content__article">
           <div class="content__text">
-            <p
-              >Мы являемся авторизованным сервисным центром по ремонту техники
+            <p>Мы являемся авторизованным сервисным центром по ремонту техники
               Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
               официальной гарантией производителя.
             </p>
             <div class="content__full-text">
-              <p
-                >Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера<span class="content__text-more"
-                  >, что подтверждает большое количество постоянных клиентов. Мы
-                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                  очередь, советуют нас родным и близким.<br
-                /></span>
-                <p class="content__text-all"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера<span class="content__text-more">, что подтверждает большое 
+                количество постоянных клиентов. Мы гордимся тем, что к нам обращаются 
+                по рекомендациям и, в свою очередь, советуют нас родным и близким.</span><br>
+                <p class="content__text-all">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Placeat illum, sunt quidem non cumque cupiditate atque, eum
                   nisi beatae possimus dolorum cum alias sequi? Eum sit debitis
                   consectetur sequi odit? Provident deserunt animi, impedit
@@ -118,117 +87,59 @@
                   cupiditate molestiae consequuntur, architecto porro nihil
                   aliquam earum sapiente quisquam odio deleniti. Expedita
                   tempora possimus eveniet quo ipsa enim blanditiis adipisci
-                  sunt iure at in libero, id in!</p
-                >
+                  sunt iure at in libero, id in!</p>
               </p>
             </div>
-            <button type="button" onclick="readMoreContent()" class="button-show-more hover"
-              >Читать далее
-              <span class="content__read-more"></span>
+            <button type="button" onclick="readMoreContent()" class="button-show-more hover">
+              Читать далее<span class="content__read-more"></span>
             </button>
           </div>
-          <img
-            class="content__topic-img"
-            src="<%= imgPath %>topic-image.png"
-            alt="изображение логотипа компании CPS"
-          />
+          <img class="content__topic-img" src="<%= imgPath %>topic-image.png" alt="изображение логотипа компании CPS"/>
         </article>
       </section>
       <div class="remontBrands">
-        <header class="remontBrands__header"
-          ><h1 class="remontBrands__header-name"
-            >Ремонт техники различных брендов</h1
-          ></header
-        >
+        <header class="remontBrands__header"><h2 class="slider-header-name">Ремонт техники различных брендов</h2></header>
         <div class="remontBrands__swiper">
           <div class="swiper swiper-brands">
             <ul class="swiper-wrapper remontBrands__wrapper  ul-clear">
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper- remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontBrands__slide"
-                ><button class="button-link hover"></button
-              ></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
+              <li class="swiper-slide remontBrands__slide"><button class="button__link hover"></button></li>
             </ul>
             <div class="swiper-pagination  remontBrands__pagination"></div>
           </div>
-          <button onclick="readMoreB()" class="button-show-more hover"
-            >Показать всё</button
-          >
+          <button onclick="readMoreB()" class="button-show-more hover">Показать всё</button>
         </div>
       </div>
       <div class="remontTechno">
-        <header class="remontTechno__header"
-          ><h1 class="remontTechno__header-name"
-            >Ремонт различных видов техники</h1
-          ></header
-        >
+        <header class="remontTechno__header"><h2 class="slider-header-name">Ремонт различных видов техники</h2></header>
         <div class="remontTechno__swiper">
           <div class="swiper swiper-techno">
             <ul class="swiper-wrapper remontTechno__wrapper ul-clear">
-              <li class="swiper-slide remontTechno__slide"
-                >Ремонт ноутбуков<button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontTechno__slide"
-                >Ремонт планшетов<button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontTechno__slide"
-                >Ремонт ПК<button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontTechno__slide"
-                >Ремонт мониторов<button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontTechno__slide"
-                >Ремонт смартфонов<button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontTechno__slide"
-                >Ремонт граммофонов<button class="button-link hover"></button
-              ></li>
-              <li class="swiper-slide remontTechno__slide"
-                >Ремонт принтеров<button class="button-link hover"></button
-              ></li>
-              <li class="swiper- remontTechno__slide"
-                >Ремонт оборудования<button class="button-link hover"></button
-              ></li>
+              <li class="swiper-slide remontTechno__slide">Ремонт ноутбуков<button class="button__link hover"></button></li>
+              <li class="swiper-slide remontTechno__slide">Ремонт планшетов<button class="button__link hover"></button></li>
+              <li class="swiper-slide remontTechno__slide">Ремонт ПК<button class="button__link hover"></button></li>
+              <li class="swiper-slide remontTechno__slide">Ремонт мониторов<button class="button__link hover"></button></li>
+              <li class="swiper-slide remontTechno__slide">Ремонт смартфонов<button class="button__link hover"></button></li>
+              <li class="swiper-slide remontTechno__slide">Ремонт граммофонов<button class="button__link hover"></button></li>
+              <li class="swiper-slide remontTechno__slide">Ремонт принтеров<button class="button__link hover"></button></li>
+              <li class="swiper- remontTechno__slide">Ремонт оборудования<button class="button__link hover"></button></li>
             </ul>
             <div class="swiper-pagination remontTechno__pagination"></div>
           </div>
-          <button onclick="readMoreT()" class="button-show-more hover"
-            >Показать всё</button
-          >
+          <button onclick="readMoreT()" class="button-show-more hover">Показать всё</button>
         </div>
       </div>
       <div class="prices">
-        <header class="prices__header"
-          ><h1 class="prices__header-name">Цены на услуги</h1></header
-        >
+        <header class="prices__header"><h2 class="slider-header-name">Цены на услуги</h2></header>
         <div class="prices__swiper">
           <table class="swiper swiper-prices">
             <thead class="prices__table-header">
@@ -253,25 +164,19 @@
                 <td class="prices__fourth-column"><button class="prices__button hover">Заказать</button></td>
               </tr>
               <tr class="swiper-slide prices__slide">
-                <td class="prices__first-column"
-                  >Замена полифонического динамика</td
-                >
+                <td class="prices__first-column">Замена полифонического динамика</td>
                 <td class="prices__second-column">1000р</td>
                 <td class="prices__third-column">30-120 мин</td>
                 <td class="prices__fourth-column"><button class="prices__button hover">Заказать</button></td>
               </tr>
               <tr class="swiper-slide prices__slide">
-                <td class="prices__first-column"
-                  >Тестирование с выдачей заключения</td
-                >
+                <td class="prices__first-column">Тестирование с выдачей заключения</td>
                 <td class="prices__second-column">1000р</td>
                 <td class="prices__third-column">30-120 мин</td>
                 <td class="prices__fourth-column"><button class="prices__button hover">Заказать</button></td>
               </tr>
               <tr class="swiper-slide prices__slide">
-                <td class="prices__first-column"
-                  >Замена программного обеспечения</td
-                >
+                <td class="prices__first-column">Замена программного обеспечения</td>
                 <td class="prices__second-column">1000р</td>
                 <td class="prices__third-column">30-120мин</td>
                 <td class="prices__fourth-column"><button class="prices__button hover">Заказать</button></td>
@@ -286,102 +191,60 @@
             </tfoot>
           </table>
           <div class="prices__footer">
-            Все цены указаны с учетом НДС. Стоимость ремонта указана на
-            единичную услугу. Для получения коммерческого предложения на
-            постоянное обслуживание, оставьте заявку.<br /><br>
-            <a class="prices__commercial-link hover" href="#"
-              >Получить коммерческое предложение</a
-            >
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
+            Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.<br /><br>
+            <a class="prices__commercial-link hover" href="#">Получить коммерческое предложение</a>
           </div>
         </div>
       </div>
       <footer class="footer">
-        <div class="footer__author"
-          ><a class="footer__link hover" href="#"
-            >© 2019 CPS <br />
-            Разработано командой Apesong</a
-          ></div
-        >
-        <div class="footer__policy"
-          ><a class="footer__link hover" href="#">Политика конфиденциальности</a></div
-        >
-        <div class="footer__offerta"
-          ><a class="footer__link hover" href="#"
-            >Информация, размещенная на данной странице, не является публичной
-            офертой</a
-          ></div
-        >
+        <div class="footer__author">
+          <a class="footer__link hover" href="#">© 2019 CPS <br />Разработано командой Apesong</a>
+        </div>
+        <div class="footer__policy">
+          <a class="footer__link hover" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__offerta">
+          <a class="footer__link hover" href="#">Информация, размещенная на данной странице,
+             не является публичной офертой</a>
+        </div>
       </footer>
     </main>
     <div class="menu">
       <header class="menu__header">
-        <button type="button" class="button button-alt-burger hover"></button>
-        <a class="logo menu__logo" href="#">
-          <img src="<%= imgPath %>logo.svg" alt="Логотип компании" />
-        </a>
-        <button type="button" class="button button-alt-search hover"></button>
+        <button type="button" class="button button__alt-burger hover"></button>
+        <a class="logo menu__logo" href="#"><img src="<%= imgPath %>logo.svg" alt="Логотип компании" /></a>
+        <button type="button" class="button button__alt-search hover"></button>
       </header>
       <main class="menu__main">
         <nav class="menu__nav">
           <ul class="menu__list no-select ul-clear">
-            <li class="menu__item"
-              ><a class="menu__link hover" href="#">Ремонт техники</a></li
-            >
-            <li class="menu__item"
-              ><a class="menu__link hover" href="#">Услуги и сервисы</a></li
-            >
-            <li class="menu__item"
-              ><a class="menu__link hover" href="#"
-                >Корпоратвным клиентам</a
-              ></li
-            >
-            <li class="menu__item"
-              ><a class="menu__link hover" href="#">Продавцам техники</a></li
-            >
-            <li class="menu__item"
-              ><a class="menu__link hover" href="#">Партнерам</a></li
-            >
-            <li class="menu__item"
-              ><a class="menu__link hover" href="#">Производителям</a></li
-            >
-            <li class="menu__item"
-              ><a class="menu__link hover" href="#"
-                >Наши сервисные центры</a
-              ></li
-            >
-            <li class="menu__item"
-              ><a class="menu__link hover" href="#">Контакты</a></li
-            >
+            <li class="menu__item"><a class="menu__link hover" href="#">Ремонт техники</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Услуги и сервисы</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Корпоратвным клиентам</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Продавцам техники</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Партнерам</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Производителям</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Наши сервисные центры</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Контакты</a></li>
           </ul>
         </nav>
       </main>
       <footer class="menu__footer">
         <ul class="menu__footer-list ul-clear">
-          <li class="menu__call"
-            ><button
-              type="button"
-              onclick="window.modalCall.showModal()"
-              class="button button-call hover"
-            ></button
-          ></li>
-          <li class="menu__chat"
-            ><button
-              type="button"
-              onclick="window.modalFeedback.showModal()"
-              class="button button-chat hover"
-            ></button
-          ></li>
-          <li class="menu__profile"
-            ><button class="button button-profile hover"></button
-          ></li>
+          <li class="menu__call">
+            <button type="button" onclick="window.modalCall.showModal()" class="button button__call hover"></button>
+          </li>
+          <li class="menu__chat">
+            <button type="button" onclick="window.modalFeedback.showModal()" class="button button__chat hover"></button>
+          </li>
+          <li class="menu__profile">
+            <button class="button button__profile hover"></button>
+          </li>
         </ul>
         <address class="menu__address">
-          <a class="menu__mail hover" href="mailto: mail@cps.com"
-            >mail@cps.com</a
-          ><br />
-          <a class="menu__phone hover" href="tel: 88008908900"
-            >8 800 890 8900</a
-          >
+          <a class="menu__mail hover" href="mailto: mail@cps.com">mail@cps.com</a><br />
+          <a class="menu__phone hover" href="tel: 88008908900">8 800 890 8900</a>
         </address>
         <ul class="language ul-clear">
           <li><a class="language__link hover" href="#">RU</a></li>
@@ -393,12 +256,8 @@
     <dialog id="modalFeedback">
       <div class="modal">
         <header class="modal__header">
-          <button
-            type="button"
-            class="button button-alt-burger hover"
-            onclick="window.modalFeedback.close()"
-          ></button>
-          <h1 class="modal__title">Обратная связь</h1>
+          <button type="button" class="button button__alt-burger hover" onclick="window.modalFeedback.close()"></button>
+          <h3 class="modal__title">Обратная связь</h3>
         </header>
         <form class="modal__form" action="" method="post">
           <input class="input" type="text" name="name" placeholder="Имя" />
@@ -407,61 +266,40 @@
             class="input"
             type="email"
             name="email"
-            placeholder="Электронная почта"
-          />
+            placeholder="Электронная почта"/>
           <textarea
             class="input input--width"
             name="message"
             placeholder="Сообщение"
-            rows="4"
-          ></textarea>
-          <p
-            >Нажимая "Отправить", вы даете согласие на
-            <a class="modal__link hover" href="#"
-              >обработку персональных данных</a
-            >
+            rows="4">
+          </textarea>
+          <p>Нажимая "Отправить", вы даете согласие на
+            <a class="modal__link hover" href="#">обработку персональных данных</a> 
             и соглашаетесь с нашей
-            <a class="modal__link hover" href="#"
-              >политикой конфиденциальности</a
-            ></p
-          >
-          <input
-            class="modal__submit hover"
-            type="submit"
-            name="send"
-            value="Отправить"
-          />
+            <a class="modal__link hover" href="#">политикой конфиденциальности</a>
+          </p>
+          <input class="modal__submit hover" type="submit" name="send" value="Отправить"/>
         </form>
       </div>
     </dialog>
     <dialog id="modalCall">
       <div class="modal">
         <header class="modal__header">
-          <button
-            type="button"
-            class="button button-alt-burger hover"
-            onclick="window.modalCall.close()"
-          ></button>
-          <h1 class="modal__title">Заказать звонок</h1>
+          <button type="button" class="button button__alt-burger hover" onclick="window.modalCall.close()"></button>
+          <h3 class="modal__title">Заказать звонок</h3>
         </header>
         <form class="modal__form" action="" method="post">
           <input class="input" type="tel" name="phone" placeholder="Телефон" />
-          <p
-            >Нажимая "Отправить", вы даете согласие на
-            <a class="modal__link hover" href="#"
-              >обработку персональных данных</a
-            >
+          <p>Нажимая "Отправить", вы даете согласие на
+            <a class="modal__link hover" href="#">обработку персональных данных</a>
             и соглашаетесь с нашей
-            <a class="modal__link hover" href="#"
-              >политикой конфиденциальности</a
-            ></p
-          >
+            <a class="modal__link hover" href="#">политикой конфиденциальности</a>
+          </p>
           <input
             class="modal__submit hover"
             type="submit"
             name="send"
-            value="Отправить"
-          />
+            value="Отправить"/>
         </form>
       </div>
     </dialog>

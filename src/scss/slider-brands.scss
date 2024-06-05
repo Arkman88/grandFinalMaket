@@ -24,16 +24,6 @@ $headerSwiperCol: #7e7e82;
     margin-bottom: 20px;
   }
 
-  .remontBrands__header-name {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: $headerSwiperCol;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-align: left;
-  }
-
   .swiper {
     width: 100%;
     height: 100%;
@@ -97,7 +87,7 @@ $headerSwiperCol: #7e7e82;
     background-image: url(../img/brends/acer.svg);
   }
 
-  .button-link {
+  .button__link {
     background: url(../img/brends/brand-link.svg) no-repeat center;
     width: 40px;
     height: 40px;
