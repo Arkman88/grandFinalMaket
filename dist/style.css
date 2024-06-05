@@ -775,6 +775,15 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   border-radius: 50%; }
 
+.slider-header-name {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #7e7e82;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left; }
+
 .blur {
   filter: blur(5px);
   overflow: hidden; }
@@ -797,11 +806,11 @@ button.swiper-pagination-bullet {
   margin-top: 33px;
   margin-bottom: 46px; }
 
-.button-alt-burger {
+.button__alt-burger {
   background-image: url(./img/alt_burger.svg);
   margin-left: 24px; }
 
-.button-alt-search {
+.button__alt-search {
   background-image: url(./img/alt-search.svg);
   margin-right: 16px;
   margin-left: auto; }
@@ -1028,14 +1037,14 @@ button.swiper-pagination-bullet {
   align-items: center;
   height: 88px;
   background-color: #fff;
-  box-shadow: 0 1px 0 #D9FFF5; }
+  box-shadow: 0 1px 0 #d9fff5; }
 
 .header__left {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-.button-burger {
+.button__burger {
   background-image: url(./img/burger.svg);
   margin-left: 16px; }
 
@@ -1049,15 +1058,15 @@ button.swiper-pagination-bullet {
 .header__right-pad {
   display: none; }
 
-.button-call {
+.button__call {
   background-image: url(./img/call.svg);
   margin-right: 16px; }
 
-.button-chat {
+.button__chat {
   background-image: url(./img/chat.svg);
   margin-right: 16px; }
 
-.button-profile {
+.button__profile {
   background-image: url(./img/profile.svg);
   margin-right: 30px; }
 
@@ -1066,18 +1075,18 @@ button.swiper-pagination-bullet {
   justify-content: flex-end;
   align-items: center; }
 
-.button-tools {
+.button__tools {
   background-image: url(./img/tools.svg);
   margin-right: 16px; }
 
-.button-tools::after {
+.button__tools::after {
   content: url(./img/divider.svg);
   position: relative;
   width: 2px;
   height: 32px;
   right: 35px; }
 
-.button-search {
+.button__search {
   background-image: url(./img/search.svg);
   margin-right: 16px; }
 
@@ -1096,14 +1105,6 @@ button.swiper-pagination-bullet {
     height: 80px;
     background: linear-gradient(90deg, #f8f8f8, #fff);
     margin-bottom: 20px; }
-  .remontBrands .remontBrands__header-name {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #7e7e82;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-align: left; }
   .remontBrands .swiper {
     width: 100%;
     height: 100%; }
@@ -1142,7 +1143,7 @@ button.swiper-pagination-bullet {
     background-image: url(./img/acer.svg); }
   .remontBrands .remontBrands__slide:nth-child(11) {
     background-image: url(./img/acer.svg); }
-  .remontBrands .button-link {
+  .remontBrands .button__link {
     background: url(./img/brand-link.svg) no-repeat center;
     width: 40px;
     height: 40px;
@@ -1177,14 +1178,6 @@ button.swiper-pagination-bullet {
     height: 80px;
     background: linear-gradient(90deg, #f8f8f8, #fff);
     margin-bottom: 20px; }
-  .remontTechno .remontTechno__header-name {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #7e7e82;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-align: left; }
   .remontTechno .swiper {
     width: 100%;
     height: 100%; }
@@ -1198,7 +1191,7 @@ button.swiper-pagination-bullet {
     width: 240px;
     height: 160px;
     background-color: #fff; }
-  .remontTechno .button-link {
+  .remontTechno .button__link {
     background: url(./img/brand-link.svg) no-repeat center;
     position: relative;
     top: 40%;
@@ -1231,14 +1224,6 @@ button.swiper-pagination-bullet {
   .prices .prices__table-header {
     display: none;
     color: #7e7e82; }
-  .prices .prices__header-name {
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #7e7e82;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-align: left; }
   .prices .swiper {
     width: 100%;
     height: 100%; }
@@ -1478,7 +1463,7 @@ button.swiper-pagination-bullet {
     margin-top: 20px; } }
 
 @media (min-width: 600px) {
-  .button-burger::after {
+  .button__burger::after {
     content: url(./img/divider.svg);
     height: 32px;
     width: 2px;
@@ -1505,7 +1490,6 @@ button.swiper-pagination-bullet {
 @media (min-width: 1050px) {
   .body {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     max-width: 1340px;
     align-items: start;
@@ -1528,7 +1512,7 @@ button.swiper-pagination-bullet {
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px; }
-  .button-tools::after {
+  .button__tools::after {
     content: 'Оставить заявку';
     position: relative;
     right: 145px;
@@ -1536,10 +1520,10 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap; }
-  .button-tools {
+  .button__tools {
     display: flex;
     margin-right: 160px; }
-  .button-search::before {
+  .button__search::before {
     content: 'Статус ремонта';
     position: relative;
     right: 140px;
@@ -1547,7 +1531,7 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap; }
-  .button-search {
+  .button__search {
     display: flex;
     margin-right: 10px; }
   .content__menu {
@@ -1569,7 +1553,7 @@ button.swiper-pagination-bullet {
     width: 320px;
     height: 100%;
     box-shadow: none; }
-  .menu__header .button-alt-burger:first-child {
+  .menu__header .button__alt-burger:first-child {
     display: none; }
   #modalFeedback,
   #modalCall {
