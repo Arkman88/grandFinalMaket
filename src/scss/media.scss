@@ -181,7 +181,6 @@ $bg-main: #f8f8f8;
 @media (min-width: 1050px) {
   .body {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     max-width: 1340px;
     align-items: start;
