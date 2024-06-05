@@ -210,9 +210,13 @@ window.addEventListener('DOMContentLoaded', () => {
     body.classList.add('blur')
   })
   modalCloseBtnF.addEventListener('click', function () {
+    main.classList.remove('blur')
+    header.classList.remove('blur')
     body.classList.remove('blur')
   })
   modalCloseBtnC.addEventListener('click', function () {
+    main.classList.remove('blur')
+    header.classList.remove('blur')
     body.classList.remove('blur')
   })
 })
